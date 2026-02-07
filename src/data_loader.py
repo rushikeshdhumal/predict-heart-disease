@@ -57,7 +57,7 @@ def download_predict_heart_disease_data(data_dir: Path | str | None = None):
             f"Stderr (bytes): {exc.stderr}"
         ) from exc
 
-    zip_path = raw_dir / "predicting-heart-disease.zip"
+    zip_path = raw_dir / "playground-series-s6e2.zip"
     if zip_path.exists():
         import zipfile
         with zipfile.ZipFile(zip_path, "r") as zf:
